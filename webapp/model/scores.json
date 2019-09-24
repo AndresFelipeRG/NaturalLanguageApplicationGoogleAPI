@@ -1,0 +1,23 @@
+{
+	"Objects": [{
+			"Name": "FaceBook",
+			"Symbol": "FB",
+			"Price": "75.00",
+			"Quantity": "20",
+			"Sentiment": "3.00"
+
+		}, {
+			"Name": "Google",
+			"Symbol": "GOOG",
+			"Price": "120.0",
+			"Quantity": "202",
+			"Sentiment": "1.00"
+		}, {
+			"Name": "Goldman Sachs",
+			"Symbol": "GS",
+			"Price": "129.0",
+			"Quantity": "30",
+			"Sentiment": "11.00"
+		}
+	]
+}

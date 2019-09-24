@@ -1,0 +1,105 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "com.sap.financial.sentiment.scores.FinancialSentimentScores",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources": {
+			"tableData_alias": {
+				"uri": "model/scores.json",
+				"type": "JSON"
+			}
+		}
+	},
+
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "com.sap.financial.sentiment.scores.FinancialSentimentScores.view.FinancialScores",
+			"type": "XML",
+			"async": true,
+			"id": "FinancialScores"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.sap.financial.sentiment.scores.FinancialSentimentScores.i18n.i18n"
+				}
+			},
+			"tableData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "tableData_alias"
+			}
+			
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.sap.financial.sentiment.scores.FinancialSentimentScores.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "RouteFinancialScores",
+				"pattern": "RouteFinancialScores",
+				"target": ["TargetFinancialScores"]
+			}],
+			"targets": {
+				"TargetFinancialScores": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "FinancialScores",
+					"viewName": "FinancialScores"
+				}
+			}
+		}
+	}
+}

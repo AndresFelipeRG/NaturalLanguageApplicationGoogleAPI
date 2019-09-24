@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-parent</artifactId>
+    	<version>2.0.0.RELEASE</version>
+    </parent>
+	<groupId>com.trading.management</groupId>
+	<artifactId>trading.management</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>trading.management</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<spring-boot-admin.version>2.1.5</spring-boot-admin.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+   			 <artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-spring-service-connector</artifactId>
+		    </dependency>
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-cloudfoundry-connector</artifactId>
+		    <scope>runtime</scope>
+		</dependency>
+		<dependency>
+		    <groupId>com.sap.hana.cloud</groupId>
+		    <artifactId>spring-cloud-cloudfoundry-hana-service-connector</artifactId>
+		    <version>1.0.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sap.cloud.db.jdbc</groupId>
+    		<artifactId>ngdbc</artifactId>
+   		    <version>2.2.16</version>
+   		</dependency>
+		<dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+		<dependency>
+    		<groupId>org.json</groupId>
+    		<artifactId>json</artifactId>
+    		<version>20180130</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>de.codecentric</groupId>
+			<artifactId>spring-boot-admin-starter-server</artifactId>
+		</dependency>
+
+		<dependency>
+      		<groupId>org.springframework</groupId>
+      		<artifactId>spring-context</artifactId>
+   	    </dependency>
+    	<dependency>
+      		<groupId>org.springframework</groupId>
+      		<artifactId>spring-core</artifactId>
+    	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>com.google.cloud</groupId>
+    		<artifactId>google-cloud-core</artifactId>
+    		<version>1.90.0</version>
+		</dependency>
+		<dependency>
+      		<groupId>org.springframework.cloud</groupId>
+      		<artifactId>spring-cloud-gcp-core</artifactId>
+      		<version>1.1.3.RELEASE</version>
+    	</dependency>
+		<dependency>
+   		    <groupId>org.springframework.cloud</groupId>
+    	    <artifactId>spring-cloud-gcp-data-datastore</artifactId>
+    	    <version>1.1.3.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.projectlombok</groupId>
+   		    <artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+  			<groupId>com.google.cloud</groupId>
+  			<artifactId>google-cloud-language</artifactId>
+  			<version>1.90.0</version>
+		</dependency>
+		<dependency>
+		 	<groupId>com.google.apis</groupId>
+  			<artifactId>google-api-services-language</artifactId>
+  			<version>v1-rev20190514-1.26.0</version>
+  		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>de.codecentric</groupId>
+				<artifactId>spring-boot-admin-dependencies</artifactId>
+				<version>${spring-boot-admin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			
+      
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

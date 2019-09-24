@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: andresfeliperincongamboa
+Build-Jdk: 10.0.2
+Implementation-Title: trading.management
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.trading.management
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/trading.management
+Created-By: Maven Integration for Eclipse
+

@@ -1,0 +1,40 @@
+<mvc:View controllerName="com.sap.financial.sentiment.scores.FinancialSentimentScores.controller.FinancialScores"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="Portfolio information">
+				<content>
+					<Table class="sapUiSizeCompact" id="table1" includeItemInSelection="true" items="{path: 'DataModel>/Objects'}" mode="MultiSelect"
+						selectionChange="onselectionChange">
+						<columns>
+							<Column>
+								<Label text="Name"/>
+							</Column>
+							<Column>
+								<Label text="Symbol"/>
+							</Column>
+							<Column>
+								<Label text="Price"/>
+							</Column>
+							<Column>
+								<Label text="Quantity"/>
+							</Column>
+							<Column>
+								<Label text="Sentiment"/>
+							</Column>
+						</columns>
+						<ColumnListItem press="onPress" type="Navigation">
+							<Text text="{DataModel>Name}"></Text>
+							<Text text="{DataModel>Symbol}"></Text>
+							<Text text="{DataModel>Price}"></Text>
+							<Text text="{DataModel>Quantity}"></Text>
+							<Text text="{DataModel>Sentiment}"></Text>
+						</ColumnListItem>
+					</Table>
+				</content>
+			</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

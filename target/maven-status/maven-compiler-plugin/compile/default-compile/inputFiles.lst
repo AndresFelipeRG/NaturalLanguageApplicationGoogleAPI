@@ -1,0 +1,17 @@
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/language/NaturalLanguageProcessor.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/language/LanguageServiceImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/iex/IexImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/language/LanguageService.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/config/CredentialsConfig.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/controller/TradingController.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/Application.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/db/DataStoreOperationsImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/db/DataStoreOperations.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/google/Credentials.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/trading/mangement/trading/management/portfolio/PortfolioImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/language/NaturalLanguageProcessorImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/model/StockItem.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/trading/mangement/trading/management/portfolio/Portfolio.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/iex/Iex.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/google/CredentialsImpl.java
+/Users/andresfeliperincongamboa/Downloads/trading.management/src/main/java/com/app/trading/management/model/Stock.java
