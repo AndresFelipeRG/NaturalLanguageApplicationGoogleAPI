@@ -16,7 +16,7 @@ import com.app.trading.management.google.CredentialsImpl;
 import com.app.trading.management.iex.IexImpl;
 import com.app.trading.management.language.LanguageServiceImpl;
 import com.app.trading.management.language.NaturalLanguageProcessorImpl;
-import com.trading.mangement.trading.management.portfolio.PortfolioImpl;
+import com.app.trading.management.portfolio.PortfolioImpl;
 import com.zaxxer.hikari.HikariDataSource;
 
 @Configuration

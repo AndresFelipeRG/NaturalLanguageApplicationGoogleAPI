@@ -1,4 +1,4 @@
-package com.trading.mangement.trading.management.portfolio;
+package com.app.trading.management.portfolio;
 
 import java.util.ArrayList;
 import java.util.Date;

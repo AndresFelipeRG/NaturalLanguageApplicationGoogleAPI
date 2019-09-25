@@ -5,8 +5,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.app.trading.maangement.repositories.StockRepository;
 import com.app.trading.management.model.Stock;
+import com.app.trading.management.repositories.StockRepository;
 
 public class HanaOperationsImpl implements HanaOperations {
 	

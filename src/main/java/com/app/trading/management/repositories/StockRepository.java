@@ -1,4 +1,4 @@
-package com.app.trading.maangement.repositories;
+package com.app.trading.management.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
