@@ -24,7 +24,7 @@ sap.ui.define([
 			this.getRouter().initialize();
 			var oModel = new JSONModel();
 			oModel.loadData("localhost:8083/getStocks");
-			sap.ui.getCore().setModel(oModel, "stocks");
+			sap.ui.getCore().setModel(oModel, "DataModel");
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
