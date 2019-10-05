@@ -22,6 +22,9 @@ sap.ui.define([
 
 			// enable routing
 			this.getRouter().initialize();
+			var oModel = new JSONModel();
+			oModel.loadData("localhost:8083/getStocks");
+			sap.ui.getCore().setModel(oModel, "stocks");
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
